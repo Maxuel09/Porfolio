@@ -10,6 +10,9 @@ import Header from '../components/Header.astro';
 <!doctype html>
 <html lang="en">
 	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
@@ -20,9 +23,6 @@ import Header from '../components/Header.astro';
 	<body>
 		<Header />
 		<slot />
-		<footer>
-			<a href="https://astro.build/">Made with Astro</a>
-		</footer>
 	</body>
 </html>
 <style is:global>
@@ -33,6 +33,7 @@ import Header from '../components/Header.astro';
 		max-width: calc(100% - 2rem);
 		color: white;
 		line-height: 1.0;
+		border-radius: 30px;
 	}
 	:root {
 		--accent: 136, 58, 234;
@@ -60,5 +61,11 @@ import Header from '../components/Header.astro';
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+
+	body {
+		background: rgb(39,39,42);
+background: linear-gradient(58deg, rgba(39,39,42,1) 0%, rgba(82,82,91,1) 29%, rgba(161,161,170,1) 100%);
+		font-family: 'Nunito', sans-serif;
 	}
 </style>

@@ -1,10 +1,14 @@
 ---
 interface Props {
-    color?: string;
+	title: string;
+	href: string;
+  color?: string;
 }
+
+const { href, title, color } = Astro.props;
 ---
 
-<a href="https://www.linkedin.com/in/maxuel-morillo-cuevas/" target="_blank"><button>linkedin</button></a>
+<a href={href} target="_blank"><button>{title}</button></a>
 
 <style>
     button {
@@ -21,7 +25,7 @@ interface Props {
 }
 
 button:hover {
-  background: #0A66C2;
+  background: {color};
   color: white;
   font-size: 1.1em;
 }

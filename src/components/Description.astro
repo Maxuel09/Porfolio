@@ -1,22 +1,29 @@
+---
+import Button from "./Button.astro";
+---
 
----
-import Button from './Button.astro';
----
 <div class="container_description">
-<div class="description">
-   <h1>Maxuel Morillo Cuevas</h1>
-   <h2>Full Stack Developer</h2>
-   <p>Desarrollador fullstack apasionado por la creación de soluciones web eficientes y robustas. Comprometido con la innovación y listo para aportar a proyectos emocionantes.</p>
-   <Button color='#0A66C2'/>
-</div>
-<div class="img-profile">
-        <!-- aqui ira la img -->
-    <img class="profile" src="../src/image/foto_curriculums.jpg" alt="maxuel"/>
+    <div class="description">
+        <h1>Maxuel Morillo Cuevas</h1>
+        <h2>Full Stack Developer</h2>
+        <p>
+            Desarrollador fullstack apasionado por la creación de soluciones web
+            eficientes y robustas. Comprometido con la innovación y listo para
+            aportar a proyectos emocionantes.
+        </p>
+        <Button title="Linkedin" href="https://www.linkedin.com/in/maxuel-morillo-cuevas/"  color="#0A66C2"/>
+        <Button title="Github" href="https://github.com/maxuel09"/>
     </div>
-
+    <div class="img-profile">
+        <!-- aqui ira la img -->
+        <img
+            class="profile"
+            src="../src/image/foto_curriculums.jpg"
+            alt="maxuel"
+        />
+    </div>
 </div>
 <style>
-
     .container_description {
         display: flex;
     }
@@ -26,11 +33,9 @@ import Button from './Button.astro';
         width: 400px;
     }
 
-    .profile{
+    .profile {
         width: 270px;
         height: 290px;
         border-radius: 30px;
     }
-
-   
 </style>
