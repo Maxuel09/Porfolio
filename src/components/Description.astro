@@ -1,5 +1,7 @@
 ---
 import Button from "./Button.astro";
+import { Image } from "astro:assets";
+import profile from "../assets/foto_curriculums.jpg";
 ---
 
 <div class="container_description">
@@ -16,11 +18,7 @@ import Button from "./Button.astro";
     </div>
     <div class="img-profile">
         <!-- aqui ira la img -->
-        <img
-            class="profile"
-            src="../src/assets/foto_curriculums.jpg"
-            alt="maxuel"
-        />
+        <Image src={profile} alt="profile" class={"profile"} />
     </div>
 </div>
 <style>
