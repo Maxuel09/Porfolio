@@ -1,11 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import { Image } from "astro:assets";
+import carrucel from "../assets/carrucel.png";
+import ecomerce from "../assets/ecomerce.png";
+import todo from "../assets/todo.png";
+import landing from "../assets/Landing-rust.png";
 ---
 
 <Layout title="Welcome to Astro.">
     <div>
-        <img src="../src/assets/carrucel.png" />
+        <Image src={carrucel} alt="carrucel" class={"img"} />
         <p class="title">El panel del alumno</p>
         <p class="description">
             Una ruleta basada en una escuela para los alumnos <br>
@@ -16,7 +21,7 @@ import Button from "../components/Button.astro";
 
 
      <div>
-        <img src="../src/assets/ecomerce.png" />
+        <Image src={ecomerce} alt="ecomerce" class={"img"} />
         <p class="title">eCollectic</p>
         <p class="description">
             Conectar a una api fake para una tienda<br>
@@ -26,7 +31,7 @@ import Button from "../components/Button.astro";
     </div>
 
      <div>
-        <img src="../src/assets/todo.png" />
+        <Image src={todo} alt="todo" class={"img"} />
         <p class="title">Traffic Light</p>
         <p class="description">
             Una To-do list basada en un semaforo simple<br>
@@ -37,7 +42,7 @@ import Button from "../components/Button.astro";
 
 
      <div>
-        <img src="../src/assets/Landing-rust.png" />
+        <Image src={landing} alt="landing" class={"img"} />
         <p class="title">Landing Page-Rust</p>
         <p class="description">
             Una Landing Page basada en Rust con el framework Yew <br>
@@ -48,8 +53,10 @@ import Button from "../components/Button.astro";
 
 
 <style>
-    img{
-        border-radius: 30px;
+    .img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
     }
 
     .title {
