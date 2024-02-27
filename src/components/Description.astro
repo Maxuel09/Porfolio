@@ -17,22 +17,26 @@ import profile from "../assets/foto_curriculums.jpg";
         <Button title="Github" href="https://github.com/maxuel09"/>
     </div>
     <div class="img-profile">
-        <!-- aqui ira la img -->
-        <Image src={profile} alt="profile" class={"profile"} />
-    </div>
+       <Image src={profile} alt="profile" class={"profile"} />
+   </div> 
 </div>
 <style>
-    .container_description {
-        display: flex;
-    }
+
     .description {
-        border: solid 1px white;
-        border-radius: 20px;
-        width: 400px;
+        width: 50%;
     }
+    .container_description {
+        border-radius: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-profile{
+        
+    }
+   
 
     .profile {
-        width: 270px;
+        width: 250px;
         height: 290px;
         border-radius: 30px;
     }
