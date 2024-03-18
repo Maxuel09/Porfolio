@@ -1,26 +1,30 @@
 ---
 interface Props {
-	title: string;
-	href: string;
+  title: string;
+  href: string;
 }
 
-const { href, title,} = Astro.props;
+const { href, title } = Astro.props;
 ---
 
 <a href={href} target="_blank"><button>{title}</button></a>
 
 <style>
-    button {
-  width: 110px;
-  height: 50px;
-  border: 1px solid #ffffff;
-  border-radius: 20px;
-  transition: all 0.3s;
-  cursor: pointer;
-  background: none;
-  font-size: 1.0em;
-  font-weight: 550;
-  font-family: 'Montserrat', sans-serif;
-}
+  button {
+    width: 110px;
+    height: 50px;
+    border: 1px solid #e0e0df;
+    border-radius: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: none;
+    font-size: 1em;
+    font-weight: 550;
+    font-family: "Montserrat", sans-serif;
+  }
 
+  button:hover {
+    background-color: #e0e0df;
+    color: #3e3e40;
+  }
 </style>
